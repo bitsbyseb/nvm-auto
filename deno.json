@@ -1,0 +1,8 @@
+{
+    "imports": {
+        "domParser":"https://deno.land/x/deno_dom/deno-dom-wasm.ts"
+    },
+    "tasks": {
+        "dev":"deno run -A --watch main.js"
+    }
+}

@@ -6,8 +6,8 @@ export async function getLastVersion() {
   const html = await res.text();
   const doc = new DOMParser().parseFromString(html, "text/html");
   const currentVerionTag = doc
-    .getElementsByClassName("home-downloadbutton")[0]
-    .firstChild.textContent.slice(0,6);
-    // return currentVerionTag;
-    return "20.9.0";
+    .getElementsByClassName("home-downloadbutton")[1]
+    .firstChild.textContent.slice(0, 6);
+  // return currentVerionTag;
+  return currentVerionTag;
 }

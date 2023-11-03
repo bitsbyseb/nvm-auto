@@ -1,8 +1,14 @@
 {
-    "imports": {
-        "domParser":"https://deno.land/x/deno_dom/deno-dom-wasm.ts"
-    },
-    "tasks": {
-        "dev":"deno run -A --watch main.js"
-    }
+  "imports": {
+    "domParser": "https://deno.land/x/deno_dom/deno-dom-wasm.ts",
+    "getVersion": "./utils/getLastVersionTag.js",
+    "installVersion": "./utils/installLastVersion.js",
+    "switchToCurrent": "./utils/switchToLastVersion.js"
+  },
+  "tasks": {
+    "dev": "deno run -A --watch main.js"
+  },
+  "lint": {
+    "exclude": ["*.json", "*.md", "*.lock",".gitignore","*."]
+  }
 }

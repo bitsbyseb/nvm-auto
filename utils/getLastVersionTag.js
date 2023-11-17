@@ -1,4 +1,4 @@
-import { DOMParser } from "https://deno.land/x/deno_dom/deno-dom-wasm.ts";
+import { DOMParser } from "domParser";
 const url = "https://nodejs.org/en";
 
 export async function getLastVersion() {
@@ -8,6 +8,5 @@ export async function getLastVersion() {
   const currentVerionTag = doc
     .getElementsByClassName("home-downloadbutton")[1]
     .firstChild.textContent.slice(0, 6);
-  // return currentVerionTag;
   return currentVerionTag;
 }

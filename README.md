@@ -4,7 +4,7 @@
 
 ## **How execute it**
 ```
-deno run task dev
+deno task dev
 ```
 
 ## **Dependencies**
